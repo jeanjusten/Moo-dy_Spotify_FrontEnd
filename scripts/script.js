@@ -29,14 +29,20 @@ async function searchTrackByMood(mood, token) {
 
 function showTrack(track) {
     const container = document.querySelector(".container-song-result");
+    const albumImage = track.album.images.length > 0 ? track.album.images[0].url : '';
+
     container.innerHTML = `
-        <div class="card bg-secondary text-white mt-4">
-        <div class="card-body">
-            <h5 class="card-title">${track.name}</h5>
-            <p class="card-text">By ${track.artists.map(a => a.name).join(", ")}</p>
-            <audio controls src="${track.preview_url}">Preview not available</audio>
-            <a href="${track.external_urls.spotify}" target="_blank" class="btn btn-success mt-2">Open in Spotify</a>
-        </div>
+        <div class="card bg-secondary d-flex flex-column justify-content-center align-items-center mt-4">
+            <img src="${albumImage}" class="card-img-top" alt="Album cover of ${track.album.name}">
+            <div class="card-body">
+                <h5 class="card-title">${track.name}</h5>
+                <p class="card-text">By ${track.artists.map(a => a.name).join(", ")}</p>
+                ${track.preview_url ? 
+                    `<audio controls src="${track.preview_url}">Preview not available</audio>` :
+                    `<p><em>Preview not available for this track.</em></p>`
+                }
+                <a href="${track.external_urls.spotify}" target="_blank" class="btn btn-success mt-2">Open in Spotify</a>
+            </div>
         </div>
     `;
 }
