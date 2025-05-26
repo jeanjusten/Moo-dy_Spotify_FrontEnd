@@ -1,0 +1,18 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+/**/
+
+.container-song-result {
+    min-height: 220px;
+}
+
+h2 {
+    color: red;
+}
