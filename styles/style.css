@@ -16,3 +16,37 @@
 h2 {
     color: red;
 }
+
+.container-song-result {
+    height: 420px;
+}
+
+
+.container-hero-placeholder {
+    max-width: 340px;
+    max-height: 420px;
+}
+
+.hero-placeholder {
+    object-fit: contain;
+    width: auto;
+    height: 230px;
+}
+
+.card-spotify {
+    background-color: transparent;
+    outline: none;
+    outline-color: none;
+    border: none;
+    border-color: none;
+}
+
+.card-body {
+    color: white;
+}
+
+.card-img-top {
+    height: 230px;
+    object-fit: contain;
+    object-position: center center;
+}
