@@ -56,9 +56,9 @@ function showTrack(track) {
                 <p class="card-text">By ${track.artists.map(a => a.name).join(", ")}</p>
                 ${track.preview_url ? 
                     `<audio controls src="${track.preview_url}">Preview not available</audio>` :
-                    `<p><em>Preview not available for this track.</em></p>`
+                    `<p class="preview-text"><em>Preview not available for this track.</em></p>`
                 }
-                <a href="${track.external_urls.spotify}" target="_blank" class="btn btn-success">Open in Spotify</a>
+                <a href="${track.external_urls.spotify}" target="_blank" class="btn btn-success-spotify">Open in Spotify</a>
             </div>
         </div>
     `;
