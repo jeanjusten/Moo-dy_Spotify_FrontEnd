@@ -9,6 +9,19 @@
 
 body {
     background-color: #FDCFC2;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0; /* top:0; bottom:0; left:0; right:0; */
+    background-image: url("../img/noise.png");
+    background-repeat: repeat;
+    opacity: 0.45;
+    pointer-events: none;
+    z-index: -1; /* atrás de tudo */
 }
 
 /* SCROLL */
@@ -51,31 +64,31 @@ h4, h5, p, .card-title {
     font-weight: bold;
 }
 
+/* LOGO */
 .container-logo {
-    position: relative;
-    height: 200px;
-    padding-top: 100px;
-    margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  min-height: 140px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 2rem;
 }
 
 .main-logo {
-    position: absolute;
-    left: -105px;
-    bottom: 0;
-    max-height: 200px;
-    animation: swing 3s infinite;
-    transform-origin: bottom center;
+  max-height: 140px;
+  margin-right: -120px; 
+  animation: swing 3s infinite;
+  transform-origin: bottom center;
 }
 
 .main-logo-2 {
-    position: absolute;
-    max-height: 50px;
-    left: 80px;
-    bottom: 60px;
-    animation: wobble 5s infinite ease-in-out;
-    display: inline-block;
+  max-height: 35px;
+  margin-bottom: 50px; 
+  margin-left: 110px; 
+  animation: wobble 5s infinite ease-in-out;
 }
 
+/* MOO-DY */
 .img-motto {
     max-height: 50px;
     transition: ease-in-out 0.5s;
@@ -85,16 +98,17 @@ h4, h5, p, .card-title {
     transform: scale(1.05);
 }
 
+/* SONG CONTAINER */
 .container-song-result {
     background-color: #ff8087;
     width: 300px;
-    height: 440px;
+    height: auto;
     border-radius: 12px;
 }
 
 .container-hero-placeholder {
     max-width: 340px;
-    max-height: 400px;
+    max-height: 280px;
     margin-top: 0;
     padding-top: 0;
 }
@@ -102,10 +116,11 @@ h4, h5, p, .card-title {
 .hero-placeholder {
     object-fit: contain;
     width: auto;
-    height: 240px;
+    height: 200px;
 }
 
 .card-spotify {
+    max-height: 320px;
     background-color: transparent;
     outline: none;
     outline-color: none;
@@ -118,18 +133,32 @@ h4, h5, p, .card-title {
 }
 
 .card-img-top {
-    height: 210px;
+    height: 160px;
     object-fit: contain;
-    object-position: center center;
+    margin-top: 6px;
 }
 
 .preview-text {
-    font-size: 0.8rem;
-    margin-top: 0;
-    padding-top: 0;
+    color: #92181e;
+    font-size: 0.55rem;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
-/*Buttons*/
+.spotify-title {
+    font-size: 0.95rem;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.spotify-text {
+    font-size: 0.7rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* BUTTONS */
 .btn-spotify {
     color: #92181e;
     background-color: #FF4F59;
@@ -138,6 +167,7 @@ h4, h5, p, .card-title {
     transition: ease-in-out 0.5s;
     width: 90px;
     font-weight: bold;
+    margin-top: 6px;
 }
 
 .btn-spotify:hover {
