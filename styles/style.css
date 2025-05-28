@@ -104,9 +104,11 @@ h4, h5, p, .card-title {
     width: 300px;
     height: auto;
     border-radius: 12px;
+    backdrop-filter: blur(5px);
 }
 
 .container-hero-placeholder {
+    margin: 0 auto;
     max-width: 340px;
     max-height: 280px;
     margin-top: 0;
@@ -114,6 +116,7 @@ h4, h5, p, .card-title {
 }
 
 .hero-placeholder {
+    object-position: center center;
     object-fit: contain;
     width: auto;
     height: 200px;
@@ -156,6 +159,12 @@ h4, h5, p, .card-title {
     font-size: 0.7rem;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+.container-buttons {
+    gap: 4px;
+    flex-wrap: wrap;
+    max-width: 500px;
 }
 
 /* BUTTONS */
