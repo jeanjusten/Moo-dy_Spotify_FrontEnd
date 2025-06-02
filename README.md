@@ -33,7 +33,7 @@
   - [6.1 Frontend Code](#arrow_forward-frontend-code)
     - [6.1.1 Endpoint URL](#arrow_forward-endpoint-url)
     - [6.1.2 Mood Keywords](#arrow_forward-mood-keywords)
-    - [6.1.3 Searching Tracks](#arrow_forward-searching-a-track-by-mood)
+    - [6.1.3 Searching Tracks](#arrow_forward-searching-tracks)
     - [6.1.4 Updating the DOM](#arrow_forward-updating-the-dom)
     - [6.1.5 Event Listener](#arrow_forward-event-listener)
 - [7. Result](#large_orange_diamond-result)
@@ -44,7 +44,7 @@
   - [8.3. Other Links](#arrow_forward-other-links)
 - [9. Etcetera](#large_orange_diamond-etcetera)
   - [9.1 About](#arrow_forward-about)
-  - [9.2 Licenses](#arrow_forward-licenses)
+  - [9.2 Licenses](#arrow_forward-license)
 
 <!--Introduction-->
 ## :large_orange_diamond: Introduction
@@ -183,7 +183,7 @@ API Call (GET) to the backend hosted on Render to get my access token.
         return data.access_token;
     }
 
-#### :small_red_triangle_down: Searching a track by Mood
+#### :small_red_triangle_down: Searching Tracks
 Here, the token is used in the `searchTrackByMood` function. 
 The mood is defined depending on which button you choose.<br>
 The response gives a json with a maximum amount of 50 songs. Then, one is chosen randomly.
