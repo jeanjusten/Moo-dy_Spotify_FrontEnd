@@ -12,39 +12,39 @@
 
 <!--Menu-->
 ## :large_orange_diamond: Table of Content
-- [1. Introduction](#large_orange_diamond-introduction)
-  - [1.1 Description](#arrow_forward-description)
-- [2. Patch Notes](#large_orange_diamond-patch-notes)
-  - [2.1 Latest Update](#pushpin-latest-update)
-- [3. Features](#large_orange_diamond-features)
-  - [3.1 Requesting a Song](#arrow_forward-requesting-a-song)
-  - [3.2 Responsiveness](#arrow_forward-responsiveness)
-    - [3.2.1 Mobile](#small_red_triangle_down-mobile)
-    - [3.2.2 Tablet](#small_red_triangle_down-tablet)
-    - [3.2.3 Desktop](#small_red_triangle_down-desktop)
-- [4. Tools and Technologies](#large_orange_diamond-tools-and-technologies) 
-  - [4.1 Stacks Used](#arrow_forward-stacks-used)
-  - [4.2 Libraries](#arrow_forward-libraries)
-- [5. Backend](#large_orange_diamond-backend)
-  - [5.1 Server](#arrow_forward-server)
-  - [5.2 Backend Code](#arrow_forward-backend-code)
-  - [5.3 Cold Start](#arrow_forward-cold-start)
-- [6. Frontend](#large_orange_diamond-frontend)
-  - [6.1 Frontend Code](#arrow_forward-frontend-code)
-    - [6.1.1 Endpoint URL](#arrow_forward-endpoint-url)
-    - [6.1.2 Mood Keywords](#arrow_forward-mood-keywords)
-    - [6.1.3 Searching Tracks](#arrow_forward-searching-a-track-by-mood)
-    - [6.1.4 Updating the DOM](#arrow_forward-updating-the-dom)
-    - [6.1.5 Event Listener](#arrow_forward-event-listener)
-- [7. Result](#large_orange_diamond-result)
-  - [7.1 Deploy on Vercel](#arrow_forward-deploy-on-vercel)
-- [8. Links](#large_orange_diamond-links)
-  - [8.1. Project Repository](#arrow_forward-project-repository)
-  - [8.2. Social Links](#arrow_forward-social-links)
-  - [8.3. Other Links](#arrow_forward-other-links)
-- [9. Etcetera](#large_orange_diamond-etcetera)
-  - [9.1 About](#arrow_forward-about)
-  - [9.2 Licenses](#arrow_forward-licenses)
+- [1. Introduction](#introduction)
+  - [1.1 Description](#description)
+- [2. Patch Notes](#patch-notes)
+  - [2.1 Latest Update](#latest-update)
+- [3. Features](#features)
+  - [3.1 Requesting a Song](#requesting-a-song)
+  - [3.2 Responsiveness](#responsiveness)
+    - [3.2.1 Mobile](#mobile)
+    - [3.2.2 Tablet](#tablet)
+    - [3.2.3 Desktop](#desktop)
+- [4. Tools and Technologies](#tools-and-technologies) 
+  - [4.1 Stacks Used](#stacks-used)
+  - [4.2 Libraries](#libraries)
+- [5. Backend](#backend)
+  - [5.1 Server](#server)
+  - [5.2 Backend Code](#backend-code)
+  - [5.3 Cold Start](#cold-start)
+- [6. Frontend](#frontend)
+  - [6.1 Frontend Code](#frontend-code)
+    - [6.1.1 Endpoint URL](#endpoint-url)
+    - [6.1.2 Mood Keywords](#mood-keywords)
+    - [6.1.3 Searching Tracks](#searching-a-track-by-mood)
+    - [6.1.4 Updating the DOM](#updating-the-dom)
+    - [6.1.5 Event Listener](#event-listener)
+- [7. Result](#result)
+  - [7.1 Deploy on Vercel](#deploy-on-vercel)
+- [8. Links](#links)
+  - [8.1. Project Repository](#project-repository)
+  - [8.2. Social Links](#social-links)
+  - [8.3. Other Links](#other-links)
+- [9. Etcetera](#etcetera)
+  - [9.1 About](#about)
+  - [9.2 Licenses](#licenses)
 
 <!--Introduction-->
 ## :large_orange_diamond: Introduction
@@ -65,8 +65,8 @@ a API call is made to Spotify and then you receive a song recommendation based o
 <p>Requesting a song is pretty simple: Just choose your mood, and the API will do the rest. It will fetch a list of possible songs based on a keywords list, and 
 deliver a album image (if available), song name, artist, song preview (if available) and a button to open and listen to the song in spotify's page.
 </p>
-<br>
-![2025-06-0217-43-32-ezgif com-crop](https://github.com/user-attachments/assets/969d2d22-5534-4924-98c4-f1a8aae6e35b)
+
+![2025-06-0217-43-32-ezgif com-crop](https://github.com/user-attachments/assets/cb4512c1-2276-463e-9bb4-e40c9916ecf2)
 <p>
 You can request a song in the same mood category as many times as you like. <br>
 The results are random, based on a response list containing up to 50 songs for a specific keyword(mood).
