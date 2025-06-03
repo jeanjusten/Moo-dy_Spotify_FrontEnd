@@ -273,7 +273,7 @@ This is just the event listener for each Mood button.
 
 ## :large_orange_diamond: Etcetera
 ### :arrow_forward: About
-Moo-dy was created by ![logo](https://github.com/user-attachments/assets/0894beaf-f587-4d0a-983a-caf7fb551554) JEAN JUSTEN as an object of study. My goal was to integrate frontend with backend, learn about endpoints, API Calls and update the DOM content with the Json response.
+Moo-dy was created by ![logo](https://github.com/user-attachments/assets/0894beaf-f587-4d0a-983a-caf7fb551554) <strong>JEAN JUSTEN</strong> as an object of study. My goal was to integrate frontend with backend, learn about endpoints, API Calls and update the DOM content with the Json response.
 
 ### :arrow_forward: License
 You may use, copy, share and modify the code as you please. No credits needed.</p>
