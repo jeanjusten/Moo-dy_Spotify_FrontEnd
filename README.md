@@ -11,7 +11,7 @@
   Check out the ***Table of Contents*** section to navigate through this documentation.
 
 <!--Menu-->
-## :large_orange_diamond: Table of Content
+## :large_orange_diamond: Table of Contents
 - [1. Introduction](#large_orange_diamond-introduction)
   - [1.1 Description](#arrow_forward-description)
 - [2. Patch Notes](#large_orange_diamond-patch-notes)
